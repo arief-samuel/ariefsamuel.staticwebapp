@@ -1,0 +1,15 @@
+footer {
+  .link {
+    display: inline-block;
+    margin: 0 0 0 0.5rem;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      -webkit-transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.25s ease-in-out;
+    }
+  }
+}

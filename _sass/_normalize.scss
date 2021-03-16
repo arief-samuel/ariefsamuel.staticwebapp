@@ -1,0 +1,34 @@
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+body,
+h1 {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
