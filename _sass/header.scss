@@ -1,0 +1,35 @@
+header {
+  padding: 3.5rem 2rem;
+  font-family: Raleway, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: white;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 1.25em;
+    letter-spacing: 0.075em;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3em;
+    }
+
+    &:after {
+      background: #ddd;
+      content: "";
+      display: block;
+      height: 2px;
+      margin: 0.5em auto 0;
+      position: relative;
+      width: 4em;
+    }
+  }
+
+  h2 {
+    margin: 1.75em 0 0;
+    line-height: 1.25em;
+    letter-spacing: 0.05em;
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,27 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ site.name }}</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="keywords" content="{{ site.keywords }}" />
+  <meta name="author" content="{{ site.meta_author }}" />
+  <link
+    rel="canonical"
+    href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
+  />
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <link rel="stylesheet" href="{{ "/css/styles.css" }}" />
+  <link rel="canonical" href="https://jeromelachaud.com" />
+  <script src="{{ "/js/modernizr.js" }}"></script>
+
+  <!-- Google verification -->
+  {% if site.google_verify %}
+  <meta name="google-site-verification" content="{{ site.google_verify }}" />
+  {% endif %}
+
+  <!-- Bing Verification -->
+  {% if site.bing_verify %}
+  <meta name="msvalidate.01" content="{{ site.bing_verify }}" />
+  {% endif %}
+</head>

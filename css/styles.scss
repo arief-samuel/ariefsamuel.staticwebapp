@@ -1,0 +1,53 @@
+---
+---
+
+@charset "utf-8";
+@import "normalize";
+@import "icons";
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800&display=swap");
+
+@import "main";
+@import "contact";
+@import "header";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1;
+  word-wrap: break-word;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    transform: scale(1);
+    background-color: #313a3d;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center;
+    background-repeat: repeat, none;
+    background-size: auto, cover;
+  }
+}
+
+.no-webp body {
+  &::before {
+    background-image: url("/img/overlay.png"), url("/img/bg.jpg");
+  }
+}
+.webp body {
+  &::before {
+    background-image: url("/img/overlay.webp"), url("/img/bg.webp");
+  }
+}
