@@ -11,9 +11,12 @@ github-url: https://github.com/arifsamuel
 stackoverflow-url: https://stackoverflow.com/users/13529905/arief21
 projects-url: https://stackoverflow.com/users/13529905/arief21
 
+
 # Google webmaster tools
 google_verify: Oi_XAR6yGyObqCQyGn7FXJv9sejZSrNxFlQs_M5LsBc
-
+plugins:
+  - jekyll-seo-tag
+  
 sass:
   style: nested
 
